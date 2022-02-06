@@ -1,0 +1,24 @@
+query flightDetails($from: String!, $to: String!, $month: String!, $date: String!) {
+    getFlightDetails(from: $from, to: $to, month: $month, date: $date) {
+        flight {
+            airlinesId
+            airlinesName
+            totalFare
+            departure
+            arrival
+        }
+        airlineDetails {
+            seatsAvailable
+        }
+    }
+}
+
+query getAllFlights {
+    getAllFlights {
+        from
+        to
+        departure
+        arrival
+        airlinesName
+    }
+}

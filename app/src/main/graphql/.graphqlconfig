@@ -1,0 +1,22 @@
+{
+  "name": "BFF GraphQL Schema",
+  "schemaPath": "schema.json",
+  "extensions": {
+    "endpoints": {
+      "Development": {
+        "url": "http://192.168.29.155:8080/graphql",
+        "headers": {
+          "user-agent": "AndroidGraphQLApp"
+        },
+        "introspect": false
+      },
+      "Prod": {
+        "url": "http://api.ravishrajput.com/bff/graphql",
+        "headers": {
+          "user-agent": "AndroidGraphQLApp"
+        },
+        "introspect": false
+      }
+    }
+  }
+}
